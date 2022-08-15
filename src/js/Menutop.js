@@ -30,11 +30,11 @@ if(change.classList.contains(".banner-actived")){
 
 $(document).ready(function () {
     $("#remove").addClass("loader");
-   document.querySelector("#remove").textContent="WEBCOME TO MY PROJECT"
+   document.querySelector("#remove").textContent="WELCOME TO MY PROJECT"
     setTimeout(function () {
       $("#remove").removeClass("loader");
       document.querySelector("#remove").textContent=""
-    }, 3000);
+    }, 2500);
   });
 
 //k nen viet nhu7 the nay
