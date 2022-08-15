@@ -28,4 +28,13 @@ if(change.classList.contains(".banner-actived")){
 
 ) 
 
+$(document).ready(function () {
+    $("#remove").addClass("loader");
+   document.querySelector("#remove").textContent="WEBCOME TO MY PROJECT"
+    setTimeout(function () {
+      $("#remove").removeClass("loader");
+      document.querySelector("#remove").textContent=""
+    }, 3000);
+  });
+
 //k nen viet nhu7 the nay

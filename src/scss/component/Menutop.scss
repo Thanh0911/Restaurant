@@ -6,6 +6,37 @@
 	box-sizing: border-box;
 	font-family: "Josefin Sans";
 }
+.loader {
+	text-align: center;
+	background: black;
+    height: 100vh;
+    width: 100vw;
+	z-index: 999999999;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+   font-size: 32px;
+   font-weight: 600;
+   display: inline-block;
+   letter-spacing: 2px;
+   color: #FFF;
+   box-sizing: border-box;
+   padding-top: 326px;
+   animation: spotlight 4s linear infinite alternate;
+
+ }
+ 
+ @keyframes spotlight {
+   0% , 20% {
+	 opacity: 1;
+	 letter-spacing: 2px;
+	}
+  80% , 100% {
+	 opacity: 0;
+	 letter-spacing: 16px;
+	}
+ }
 
 header {
 	height: auto;
