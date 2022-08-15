@@ -1,15 +1,7 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Document
-  body 
 header
   .left
     img(src='https://elanta.app/nazar/tastyc-demo/img/logo-sm.svg' alt='logo' width='100')
-  nav
+  nav.list.list-actived
     ul
       li.home
         a(href='') Home
@@ -53,11 +45,13 @@ header
   .right
     button RESERVATION
     i.fa-solid.fa-cart-shopping
+    i#icon.fa-solid.fa-bars
 section.splide(aria-labelledby='carousel-heading')
   h2#carousel-heading 
   .splide__track
     ul.splide__list
       li.splide__slide
+       
         .banner(style='background-image: url(https://bslthemes.com/tastyc/wp-content/uploads/2021/04/home-slide-3.jpg)')
  
           .content
@@ -103,4 +97,4 @@ section.splide(aria-labelledby='carousel-heading')
             .button
               button RESERVATION
               button OPEN MENU
-script(type="module" src="../js/Menutop.js") 
+script(type="module" src="../js/Menutop.js")
