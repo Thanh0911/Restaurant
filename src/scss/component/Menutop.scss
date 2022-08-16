@@ -81,6 +81,12 @@ header {
 			font-size: 25px;
 			color: #82b440;
 			margin-left: 20px;
+			transition: 1s;
+			&:hover{
+				color:black;
+				transform: scale(1);
+				cursor: pointer;
+			}
 			&.fa-bars{
 				display: none;
 			}
@@ -101,6 +107,11 @@ nav {
 			a {
 				text-decoration: none;
 				color: #231f20;
+				transition: all 0.2s;
+				&:hover{
+					color: orange;
+					letter-spacing: 1px;
+				}
 			}
 			// &:first-child {
 				
@@ -318,8 +329,8 @@ nav {
 	header {
 		.right{
 			button{
-				font-size: 15px;
-				padding: 14px;
+				font-size: 11px;
+				padding: 13px;
 			}
 			i{
 				font-size: 18px;
@@ -378,11 +389,11 @@ nav {
 	header {
 		.right{
 			button{
-				font-size: 11px;
-				padding: 14px;
+				font-size: 10px;
+				padding: 12px;
 			}
 			i{
-				font-size: 18px;
+				font-size: 16px;
 			}
 		}
 	}
@@ -410,7 +421,8 @@ nav {
 			font-size: 8px;
 		}
 	}}
-@media only screen and (max-width:841px){
+
+@media only screen and (max-width:874px){
 	
 	ul{
 		li{
@@ -423,10 +435,10 @@ nav {
 		.right{
 			button{
 				font-size: 10px;
-				padding: 12px;
+				padding: 10px;
 			}
 			i{
-				font-size: 16px;
+				font-size: 14px;
 			}
 		}
 	}
