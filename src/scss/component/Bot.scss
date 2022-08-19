@@ -118,14 +118,28 @@ body {
       .food-img {
         display: flex;
         flex-wrap: wrap;
+        height: 100px;
+        .splide.splider-bot {
+          width: 100%;
+          height: 100%;
+          .splide__track {
+            ul.splide__list {
+              li.splide__slide {
+                width: 25%;
+                padding: 0 5px;
+              }
+            }
+          }
+        }
         .sImage {
-          width: 100px;
-          height: 100px;
-
+          width: 100%;
+          height: 130%;
+          // height: auto;
           img {
             display: block;
             width: 100%;
-            height: 100%;
+            height: 67px;
+            border-radius: 7px;
           }
         }
       }
@@ -140,6 +154,9 @@ body {
       font-family: "Josefin Sans", sans-serif;
       text-decoration: none;
       padding-top: 30px;
+    }
+    a:nth-child(3) {
+      padding-top: 11px;
     }
   }
 
@@ -169,11 +186,12 @@ body {
   }
 }
 
-@media only screen and (max-width: 905px) {
+@media only screen and (max-width: 913px) {
   .botContainer {
-    max-width: 800px;
+    max-width: 720px;
     margin: 0 auto;
     position: relative;
+    padding: 0 10px;
     .firstBC {
       // max-width: 1110px;
       // margin: 0 auto;
@@ -203,12 +221,122 @@ body {
         }
       }
     }
+    .line.firstLine {
+      padding-bottom: 10px;
+    }
 
-    .secondBC .lastBC {
-      position: absolute;
-      width: 100%;
-      height: 600px;
-      margin-bottom: 100px;
+    .secondBC {
+      height: 50px;
+      display: block;
+
+      .secondBC-left {
+        width: 100%;
+        .title {
+          margin-top: 74px;
+        }
+      }
+      .secondBC-middle {
+        width: 100%;
+        .title {
+          margin-top: 130px;
+        }
+      }
+      .secondBC-right {
+        width: 100%;
+        .title {
+          margin-top: 230px;
+        }
+        img {
+          height: 105px !important;
+        }
+        .thirdA {
+          margin-top: 40px;
+        }
+        .splide__arrow--prev {
+          margin-top: 106px;
+          // margin-left: 236px;
+          margin-left: 240px !important;
+        }
+        .splide__arrow--next {
+          margin-top: 106px;
+          // margin-left: 298px;
+          margin-left: 290px !important;
+        }
+      }
+    }
+
+    .line.secondLine {
+      // margin-bottom: 20px;
+      transform: translateY(580px);
+    }
+
+    .lastBC {
+      display: flex;
+      height: 120px;
+      transform: translateY(572px);
+      justify-content: space-between;
+      padding-top: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .botContainer {
+    .secondBC {
+      .secondBC-right {
+        .splide__arrow--next {
+          margin-left: 263px;
+        }
+        .splide__arrow--prev {
+          margin-left: 222px;
+        }
+      }
+    }
+  }
+  .secondBC-right .splide__arrow--next {
+    margin-top: 106px;
+    margin-left: 298px;
+  }
+}
+@media only screen and (max-width: 608px) {
+  .botContainer {
+    .secondBC {
+      .secondBC-right {
+        .splide__arrow--next {
+          margin-left: 202px !important;
+        }
+        .splide__arrow--prev {
+          margin-left: 157px !important;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1129px) {
+  .botContainer {
+    .secondBC {
+      .secondBC-right {
+        .splide__arrow--next {
+          margin-left: 146px;
+        }
+        .splide__arrow--prev {
+          margin-left: 118px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1031px) {
+  .botContainer {
+    .secondBC {
+      .secondBC-right {
+        .splide__arrow--next {
+          margin-left: 113px;
+        }
+        .splide__arrow--prev {
+          margin-left: 78px;
+        }
+      }
     }
   }
 }
@@ -218,21 +346,21 @@ html {
 }
 
 .splide__arrow--prev {
-  margin-top: 90px;
-  margin-left: -30px;
+  margin-top: 67px;
+  margin-left: 122px;
 }
 .splide__arrow--next {
-  margin-top: 90px;
-  margin-left: 30px;
+  margin-top: 67px;
+  margin-left: 165px;
 }
-
-.splide.splider-bot {
-  width: 400px;
-  .splide__track {
-    ul.splide__list {
-      li.splide__slide {
-        // width: 150px;
-      }
-    }
-  }
+.splide__arrow svg {
+  fill: white;
+  height: 1.2em;
+  width: 1.2em;
+}
+button.splide__arrow {
+  background-color: transparent;
+}
+.splide__pagination.splide__pagination--ltr {
+  display: none;
 }
