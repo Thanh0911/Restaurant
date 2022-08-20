@@ -1,10 +1,103 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-    body 
-
-script(type="module" src="../js/Menutop.js") 
+span#remove.loader  WEBCOME TO MY PROJECT
+header
+  .left
+    img(src='https://elanta.app/nazar/tastyc-demo/img/logo-sm.svg' alt='logo' width='100')
+  nav.list.list-actived
+    ul
+      li.home
+        a(href='') Home
+        .item.after__active
+          p HOME SLIDER
+          p HOME IMAGE
+          p HOME VIDEO
+          p ONEPAGE
+      li.about
+        a(href='') About
+        .item2.after__active
+          p ABOUT US
+          p ABOUT EMPLOYEE
+          p SERVICES
+          p HISTORY
+      li.home
+        a(href='') Menu
+        .item.after__active
+          p MENU TYPE 1
+          p MENU TYPE 2
+          p MENU TYPE 3
+          p MENU TYPE 4
+      li.home
+        a(href='') Pages
+        .item.after__active
+          p Galery
+          p History
+          p Features
+          p FAQ
+      li.home
+        a(href='') Shop
+        .item.after__active
+          p Product List
+          p Single Product
+          p Cart
+          p Checkout
+      li.home
+        a(href='') Contact
+        .item.after__active__contact
+         p Hồng Thịnh
+  .right
+    button RESERVATION
+    i.fa-solid.fa-cart-shopping
+    i#icon.fa-solid.fa-bars
+section.splide(aria-labelledby='carousel-heading')
+  h2#carousel-heading 
+  .splide__track
+    ul.splide__list
+      li.splide__slide
+       
+        .banner(style='background-image: url(https://bslthemes.com/tastyc/wp-content/uploads/2021/04/home-slide-3.jpg)')
+ 
+          .content
+            h4 HELLO, NEW FRIEND!
+            h1
+              | Welcome Back
+              br
+              | to Tastyc
+            h3
+              | Quaerat debitis, vel, sapiente dicta sequi
+              br
+              | labore porro pariatur harum expedita.
+            .button
+              button RESERVATION
+              button OPEN MENU
+      li.splide__slide
+        .banner(style='background-image: url(https://bslthemes.com/tastyc/wp-content/uploads/2021/04/home-slide-2.jpg)')
+          .content
+            h4 HELLO, NEW FRIEND!
+            h1
+              | Visit To Our
+              br
+              | Online Shop
+            h3
+              | Quaerat debitis, vel, sapiente dicta sequi
+              br
+              | labore porro pariatur harum expedita.
+            .button
+              button RESERVATION
+              button OPEN MENU
+      li.splide__slide
+        .banner(style='background-image: url(https://bslthemes.com/tastyc/wp-content/uploads/2021/04/home-slide-1.jpg)')
+          .content
+            h4 HELLO, NEW FRIEND!
+            h1
+              |RESERVE YOUR 
+              br
+              | TABLE TODAY
+            h3
+              | Quaerat debitis, vel, sapiente dicta sequi
+              br
+              | labore porro pariatur harum expedita.
+            .button
+              button RESERVATION
+              button OPEN MENU
+script(type="module" src="../js/Menutop.js")
+script(src='jquery-3.6.0.min.js')
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js')
