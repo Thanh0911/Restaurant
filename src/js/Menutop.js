@@ -31,11 +31,10 @@ $(document).ready(function () {
 window.onload = () =>{
   window.onscroll = function()
   {
-    if(window.scrollY>=350){
+    if(window.scrollY>=320){
     document.querySelector('header').style.marginTop="0px"
     } else{
       document.querySelector('header').style.marginTop="20px"
     }
-    console.log("scrolling.....", window.scrollY);
   }
   }
