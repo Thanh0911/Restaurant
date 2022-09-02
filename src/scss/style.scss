@@ -23,6 +23,7 @@ html {
   font-size: 62.5%;
   font-family: "Playfair Display", serif;
   // font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth !important;
 }
 body {
   font-size: 1.6rem;
@@ -30,6 +31,7 @@ body {
   background-size: cover !important;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  scroll-behavior: smooth;
   background-position: center center;
     
 }
