@@ -296,6 +296,9 @@ nav {
 			letter-spacing: 2px;
 			margin-left: 15px;
 			cursor: pointer;
+			&:after{
+				display: none;
+			}
 		}
 	}
 }

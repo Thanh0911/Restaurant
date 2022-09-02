@@ -18,8 +18,6 @@ document.addEventListener( 'DOMContentLoaded', function() {
         list.classList.add("list-actived")
 } 
 }
-
-
 ) 
 
 $(document).ready(function () {

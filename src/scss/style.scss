@@ -1,7 +1,6 @@
 @import "component/component1.scss";
 @import "component/component2.scss";
 @import "component/Menutop.scss";
-
 @import "component/BigDiv1.scss";
 @import "component/BigDiv2.scss";
 @import "component/Mid.scss";
@@ -27,4 +26,10 @@ html {
 }
 body {
   font-size: 1.6rem;
+  background-image: linear-gradient(180deg, rgba(26, 26, 27, 0.6), rgba(38, 47, 53, 0.5)),url(https://elanta.app/nazar/tastyc-demo/img/bg.jpg) !important;
+  background-size: cover !important;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+    
 }
