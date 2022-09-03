@@ -37,7 +37,8 @@
 	}
  }
 
-header {
+header{
+	
 	height: auto;
 	position: fixed;
 	z-index: 9999999;
@@ -329,8 +330,7 @@ nav {
 			}
 		}
 	}
-	header {
-		transition: .3s;
+header {
 		.right{
 			button{
 				font-size: 11px;
