@@ -1,0 +1,1 @@
+var splide=new Splide(".splide.splider-bot",{type:"loop",perPage:4,autoplay:!0});splide.mount();
